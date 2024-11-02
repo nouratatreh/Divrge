@@ -1,0 +1,371 @@
+body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container1 {
+    margin: auto;
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+ 
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+} 
+
+/* Navbar Styles */
+.navbar {
+    background-color: #1E7145;
+    color: #fff;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.navbar a.active {
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color: #ffdf5f;
+    text-decoration: underline;
+}
+
+.icons {
+    margin: 0 15px;
+    text-align: end;
+    justify-content: end;
+}
+
+/* Profile Card Styles */
+.cards-wrapper {
+    display: flex; 
+    gap: 20px; 
+    justify-content: flex-start; 
+    align-items: flex-start; 
+    flex-wrap: wrap; 
+    margin-top: 20px; 
+}
+
+.profile-card {
+    display: flex;
+    flex-direction: column;
+    background-color:#eeeeee;
+    padding: 10px 50%  10px 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.534);
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    width: 200%;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.profile-header img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.profile-name {
+    flex-grow: 1; 
+}
+
+.profile-name h5 {
+    margin: 0;
+    font-weight: bold;
+}
+
+.profile-name p {
+    margin: 0;
+    color: #555;
+}
+
+.view-profile-btn {
+    position: absolute;
+    right: 0;
+    background-color: #1E7145;
+    border: 1px solid #1E7145;
+    color: #fff;
+    padding: 5px 40px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-custom-success {
+    background-color: #1E7145;    
+    border-color: #1E7145;     
+    color: white;             
+}
+
+
+.btn-custom-success:hover {
+    background-color: #165e36; 
+    border-color: #165e36;    
+}
+
+
+
+
+.view-profile-btn:hover {
+    background-color: #fff;
+    color: #1E7145;
+}
+
+.additional-info {
+    display: flex;
+    justify-content: space-between;
+    width: 200%;
+    margin-top: 10px;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 20px; 
+}
+
+.info-item a {
+    display: flex;
+    align-items: center;
+    font-size: 40px;
+    text-decoration: none;
+    color: #333333a4;
+    transition: color 0.3s ease;
+}
+
+
+.info-text p {
+    margin: 0;
+    font-size: 14px;
+    color: #7c7a7a;
+}
+
+.info-text p:first-child {
+    font-weight: bold;
+    color: black;
+}
+
+
+
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .navbar a {
+        margin: 5px 0;
+    }
+
+    .profile-stats-container {
+        flex-direction: column;
+    }
+
+    .profile-card {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .profile-card{
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .profile-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-card img {
+        margin-bottom: 10px;
+    }
+}
+
+
+  .vacation-requests-container {
+    background-color: #eeeeee;
+    border-radius: 50px;
+    padding: 40px;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.534);
+    max-width: 1200px;
+    margin: auto;
+    margin-bottom: 50px;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .header h2 {
+    font-size: 1.5rem;
+    color: #000;
+    margin: 0;
+    display: flex;
+    align-items: center;
+  }
+
+  .header h2 img {
+    margin-right: 10px;
+  }
+
+
+  .card-container {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .vacation-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+  }
+
+  .vacation-card h3 {
+    font-size: 16px;
+    text-align: start;
+    color: black;
+  }
+  .vacation-card p {
+    font-size: 15px;
+    color: #555;
+    margin: 5px 0;
+    text-align: start;
+  }
+  
+
+  .view-more {
+    text-align: right;
+    margin-top: 20px;
+  }
+
+  .view-more a {
+    color: #1E7145;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .divider {
+    height: 6px;
+    border-radius: 5px;
+    background-color: #c2c2c2;
+    margin: 20px 0;
+    }
+
+
+    .pendding-requests-container {
+        background-color: #eeeeee;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin-top: 20px;
+    }
+    
+    .pendding-requests-container .header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    
+    .pendding-requests-container .header h2 {
+        font-size: 18px;
+        margin-left: 10px;
+    }
+    
+    .pendding-requests-container .divider {
+        width: 100%;
+        height: 2px;
+        background-color: #e0e0e0;
+        margin-bottom: 20px;
+    }
+    
+    .pendding-requests-container .card-container {
+        display: flex;
+        gap: 20px;  
+        flex-wrap: wrap;  
+    }
+    
+    .pendding-requests-container .vacation-card {
+        flex: 1;  
+        min-width: 250px;  
+        background-color: #f8f8f8;
+        border-radius: 10px;
+        padding: 15px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+    
+    .vacation-card img {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        margin-bottom: 10px;
+      }
+    
+    .pendding-requests-container .vacation-card h3 {
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+    
+    .pendding-requests-container .vacation-card p {
+        font-size: 14px;
+        color: #666;
+        margin-bottom: 5px;
+    }
+    
+    .pendding-requests-container .view-more {
+        text-align: right;
+        margin-top: 20px;
+    }
+    
+    .pendding-requests-container .view-more a {
+        color: #28a745;
+        font-size: 14px;
+        text-decoration: none;
+    }
+    

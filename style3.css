@@ -1,0 +1,236 @@
+body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.navbar {
+    background-color: #1E7145;
+    color: #fff;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.navbar a.active {
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color: #ffdf5f;
+    text-decoration: underline;
+}
+
+.icons {
+    margin: 0 15px;
+    text-align: end;
+    justify-content: end;
+}
+
+.vacation-requests-container {
+    background-color: white;
+    border-radius: 50px;
+    padding: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 1400px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.vacation-requests-container .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.vacation-requests-container .header h2 {
+    font-size: 18px;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.vacation-requests-container .header h2 img {
+    margin-right: 10px;
+}
+
+.vacation-requests-container .search-bar {
+    position: relative;
+    max-width: 200px;
+    width: 100%;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 8px 0 10px 30px;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+.search-bar i {
+    color: #666;
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 20px;
+}
+
+.vacation-requests-container .divider {
+    width: 100%;
+    height: 2px;
+    background-color: #e0e0e0;
+    margin-bottom: 20px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.vacation-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 25%;
+}
+
+.vacation-card img {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+}
+
+.card-content {
+    flex-grow: 1;
+}
+
+.vacation-card h3 {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+}
+
+.vacation-card p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #666;
+}
+
+.action-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.action-buttons button {
+    width: 100px;
+    padding: 8px;
+    border-color: #1E7145;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.decline-btn {
+    background-color: #fff;
+    color: #1E7145;
+    border-color: #1E7145;
+}
+
+.approve-btn {
+    background-color: #1E7145;
+    color: white;
+}
+
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.pagination-btn {
+    background-color: #ddd;
+    border: none;
+    color: #333;
+    padding: 8px 12px;
+    text-decoration: none;
+    margin: 0 4px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.pagination-btn.active {
+    background-color: #fff;
+    color: #333;
+    font-weight: bold;
+    border: 2px solid #ddd;
+}
+
+.pagination-btn:disabled {
+    background-color: #aaa;
+    color: #777;
+    cursor: not-allowed;
+}
+
+.pagination-btn:hover:not(.active):not(:disabled) {
+    background-color: #ccc;
+}
+
+.select-checkbox {
+    display: none;
+    color: #666;
+}
+
+label {
+    color: #666;
+}
+
+.filter-icon-container {
+    text-align: right;
+}
+
+.filter-icon {
+    width: 20px;
+    cursor: pointer;
+    margin-right: 10px;
+}
